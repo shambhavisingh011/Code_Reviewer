@@ -1,3 +1,6 @@
+const cors = require("cors");
+app.use(cors());
+
 require('dotenv').config()// through this we can access the google gemini api key
 const app = require("./src/app")
 
