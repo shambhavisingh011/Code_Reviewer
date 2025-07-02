@@ -1,11 +1,12 @@
+require('dotenv').config() // Load env vars first
+
+const app = require("./src/app") // Import the express app
 const cors = require("cors");
-app.use(cors());
 
-require('dotenv').config()// through this we can access the google gemini api key
-const app = require("./src/app")
+app.use(cors()); // Now app is defined, so this is safe
 
-//if we want to start the server we use this method which start server at port 3000
-app.listen(3000,()=>{
-  console.log('Server is running on http:// localhost:3000')
-})
-
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
