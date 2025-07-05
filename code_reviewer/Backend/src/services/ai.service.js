@@ -84,3 +84,8 @@ async function generateContent(prompt){
 }
 
 module.exports = generateContent
+//This code sets up the core AI service used in the code reviewer project by connecting the backend to Google's Gemini AI model using the @google/generative-ai package. 
+//It initializes the Gemini model with an API key and configures it using a detailed system instruction, which defines the AI’s role as a senior code reviewer with 7+ years of experience. 
+//The instruction guides the AI on what to look for in the code, including best practices, performance issues, security concerns, and readability.
+//The generateContent function sends the user-submitted code as a prompt to the Gemini model and returns the AI-generated review. This function is exported so it can be used by other parts of the backend, like the controller.
+//Overall, this file plays a crucial role in the project by handling the communication with the AI and providing meaningful, structured feedback to users on their code.
