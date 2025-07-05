@@ -1,4 +1,4 @@
-:root {
+:root { 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -66,3 +66,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* This the root css file that applies to the whole of code reviewer app but the app.css This file is used to style your specific UI layout and features — in your case, the code editor, review button, and markdown display.*/
